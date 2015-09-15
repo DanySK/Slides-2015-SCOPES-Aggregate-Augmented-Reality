@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[presentation]{beamer} %\mode<presentation>{\usetheme{sapere}}
+\usetheme{CambridgeUS}
+\usecolortheme{orchid}
+
+\definecolor{themeColor}{HTML}{11AD1E}
+
+\setbeamercolor*{structure}{bg=black,fg=themeColor}
+
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=structure.fg!75}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=structure.fg!50!black}
+\setbeamercolor*{palette quaternary}{fg=white,bg=black}
+
+\setbeamercolor{section in toc}{fg=black,bg=white}
+\setbeamercolor{alerted text}{use=structure,fg=structure.fg!50!black!80!black}
+
+\setbeamercolor{titlelike}{parent=palette primary,fg=structure.fg!50!black}
+\setbeamercolor{frametitle}{bg=structure.fg!10!white,fg=structure.fg!50!black!80!black}
+
+\setbeamercolor*{titlelike}{parent=palette primary}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{amsfonts,amstext,amssymb,wasysym}
+\usepackage{fancyvrb}
+\usepackage{alltt}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{multimedia,pgf}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{framed}
+\usepackage{cleveref}
+
+% Names
+\newcommand{\alchemist}{{\sf ALCHEMIST}}
+
+\title[Computational Fields and Augmented Reality]{Computational Fields meet Augmented Reality: Perspectives and Challenges}
+
+\author[Pianini et. al]{
+Danilo Pianini, Angelo Croatti, Mirko Viroli, Alessandro Ricci\\
+\texttt{{\footnotesize \{danilo.pianini, a.croatti, mirko.viroli, a.ricci\}@unibo.it}}}
+
+
+\institute[UniBo]
+{\textsc{Alma Mater Studiorum}---Universit\`a di Bologna a Cesena}
+
+\date[2015-09-21 SCOPES]{Spatial and COllective PErvasive Computing Systems (SCOPES)\\
+\scriptsize September 21, 2015 - Cambridge, USA
+}
+
+\pgfdeclareimage[height=0.625cm]{university-logo}{imgs/logo}
+\logo{\pgfuseimage{university-logo}}
+
+
+\begin{document}
+
+
+%===============================================================================
+\frame[label=coverpage]{\titlepage}
+%===============================================================================
+
+\section*{Outline}
+%===============================================================================
+\frame{\tableofcontents}
+
+
+
+%===============================================================================
+\section{Augmented Reality}
+%===============================================================================
+\begin{frame}{Definition}
+  \begin{block}{Augmented Reality}
+    is a technology that allows the user to see the \textbf{real world, with virtual objects} superimposed upon or mixed with the real world \cite{Azuma97}.
+  \end{block}
+  \begin{itemize}
+   \item Mostly see-through devices
+  \end{itemize}
+
+\end{frame}
+
+%===============================================================================
+\section{Aggregate computing}
+%===============================================================================
+%-------------------------------------------------------------------------------
+\subsection{The concept of field}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Protelis: a language for aggregate computing}
+%-------------------------------------------------------------------------------
+citare ieee computer
+%===============================================================================
+\section{A unifying perspective}
+%===============================================================================
+%-------------------------------------------------------------------------------
+\subsection{Level of integration}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Examples}
+%-------------------------------------------------------------------------------
+
+
+
+\section*{\refname}
+%===============================================================================
+\begin{frame}[allowframebreaks]
+%\begin{frame}[t,allowframebreaks]
+  \frametitle{\refname}
+  \scriptsize
+  \bibliographystyle{alpha}
+  \bibliography{bibliography}
+\end{frame}
+\section*{\refname}
+
+
+
+
+\end{document}
