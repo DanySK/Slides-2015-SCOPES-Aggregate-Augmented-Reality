@@ -398,7 +398,7 @@ Danilo Pianini, Angelo Croatti, Mirko Viroli, Alessandro Ricci\\
   \begin{block} {Limitations}
    \begin{itemize}
     \item The program must be conceived with this kind of interaction in mind
-    \item Harder to realize (proper CF libraries can be devised, though)
+    \item Harder to realize
    \end{itemize}
   \end{block}
 \end{frame}
@@ -407,15 +407,68 @@ Danilo Pianini, Angelo Croatti, Mirko Viroli, Alessandro Ricci\\
 %-------------------------------------------------------------------------------
 \subsection{Computational fields as enabling technology for AR applications}
 %-------------------------------------------------------------------------------
+\begin{frame}{A look the other way around}
+  We have discussed increasing degrees of interaction between augmented reality and computational fields, up to a ``strong'' interaction, but...
+  \begin{block}{}
+    ...are computational fields a valid abstraction for creating such programs?
+  \end{block}
+  \begin{block} {Progression}
+   \begin{itemize}
+    \item ``Weak'' interaction is almost a free lunch
+    \item ``Strong'' interaction seems powerful, but requires CF programs to be designed with AR in mind
+    \begin{itemize}
+      \item AR is no longer confined to be an I/O component of the system, it impacts the ``business logic'' of the application instead
+    \end{itemize}
+   \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Mirror Worlds on Augmented Fields}
+  \begin{block}{}
+    \begin{itemize}
+      \item Basic strategy: 
+      \begin{itemize}
+        \item Switch from a simple field of mirrored entities to a field of entities with location
+        \item Exploit CF programming to keep the entities alive and their status aligned on multiple devices
+      \end{itemize}
+      \item If entities have their own behavior, mobile code support is required \cite{computationalfields-forte2015}
+      \item Reusable building blocks can be exploited in order to devise a ``standard'' solution \cite{IoT2015}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
 %-------------------------------------------------------------------------------
-\subsection{Examples}
+\subsection{Example}
 %-------------------------------------------------------------------------------
+\begin{frame}{Aggregate triage}
+ANGELO
+\end{frame}
+
 %===============================================================================
 \section{Conclusion}
 %===============================================================================
 %-------------------------------------------------------------------------------
 \subsection{Conclusion and future work}
 %-------------------------------------------------------------------------------
+\begin{frame}{Conclusion}
+  \begin{itemize}
+    \item We noted that both computational fields and augmented reality work best in environments densely populated with computational devices
+    \item We have explored increasing degrees of integration
+    \begin{itemize}
+      \item AR as UI $\Rightarrow$ not hard, no change in aggregate programs
+      \item Local input from AR devices $\Rightarrow$ still not hard, still no change
+      \item Injection of (possibly proactive) augmented entities, $\Rightarrow$ requires CF programs to be properly designed
+    \end{itemize}
+    \item Modern aggregate programming languages support code mobility and reusability
+  \end{itemize}
+  \begin{block}{}
+    We believe that CF are a promising programming abstraction for supporting AR applications, and languages and technologies are maturing
+  \end{block}
+  \begin{block}{Future work}
+    Build a working demo is the most effective way of experimentally confirm our hypothesis.
+  \end{block}
+\end{frame}
+
 
 
 
