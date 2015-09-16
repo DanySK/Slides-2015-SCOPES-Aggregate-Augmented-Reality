@@ -8,4 +8,5 @@ syntax: glob
 *.blg
 *.bbl
 *.aux
+*.vrb
 .directory
